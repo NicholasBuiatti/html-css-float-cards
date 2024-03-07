@@ -11,7 +11,50 @@ header > h1 {
     font-size: 50px;
 }
 
+/* main */
+
 .introduzione-sito {
     text-align: center;
 }
 
+main {
+    width: 1200px;
+    margin: auto;
+}
+
+main::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* casella artista singolo */
+.song {
+    float: left;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    width: 30%;
+}
+
+.song::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+img {
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+
+.info {
+    float: left;
+    margin: 0 15px;
+}
+
+.center {
+    margin-left: calc(100% - 95%);
+    margin-right: calc(100% - 95%);
+}
